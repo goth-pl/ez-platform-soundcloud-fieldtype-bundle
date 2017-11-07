@@ -1,0 +1,23 @@
+<div class="ez-fieldview-row pure-g">
+    <div class="ez-fieldview-label pure-u">
+        <p class="ez-fieldview-name">
+            <strong>{{ translate_property fieldDefinition.names }}</strong>
+        </p>
+    </div>
+    <div class="ez-fieldview-value pure-u">
+        <div class="ez-fieldview-value-content">
+            {{#if value.url}}
+                <div>
+                    <b>URL:</b> <a href="{{ value.url }}" target="_blank">{{ value.url }}</a>
+                </div>
+                <div>
+                    <b>Preview:</b>
+                    <iframe
+                        width="100%" height="166" scrolling="no" frameborder="no"
+                        src="https://w.soundcloud.com/player/?url={{ value.url }}&amp;auto_play=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true">
+                    </iframe>
+                </div>
+            {{/if}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+{
+  "name": "goth/ez-platform-soundcloud-field-type-bundle",
+  "description": "SoundCloud FieldType for eZPlatform",
+  "license": "MIT",
+  "type": "symfony-bundle",
+  "authors": [
+    {
+      "name": "Michal Szycko",
+      "email": "m.szycko@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "~7.0",
+    "ezsystems/ezpublish-kernel": "~6.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Goth\\EzPlatformSoundCloudFieldTypeBundle\\": ""
+    }
+  }
+}

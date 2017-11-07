@@ -1,0 +1,22 @@
+system:
+    default:
+        yui:
+            modules:
+                ez-rawcontentview:
+                    requires:
+                        - 'gothsoundcloud-view'
+                ez-contenteditformview:
+                    requires:
+                        - 'gothsoundcloud-editview'
+                gothsoundcloud-view:
+                    requires: ['ez-fieldview', 'gothsoundcloudview-ez-template', 'ez-translator']
+                    path: '%goth_soundcloud_fieldtype.public_dir%/js/views/fields/goth-soundcloud-view.js'
+                gothsoundcloudview-ez-template:
+                    type: 'template'
+                    path: '%goth_soundcloud_fieldtype.public_dir%/js/views/fields/templates/goth-soundcloud-view.hbt'
+                gothsoundcloud-editview:
+                    requires: ['ez-fieldeditview', 'gothsoundcloudeditview-ez-template', 'ez-translator']
+                    path: '%goth_soundcloud_fieldtype.public_dir%/js/views/fields/goth-soundcloud-editview.js'
+                gothsoundcloudeditview-ez-template:
+                    type: 'template'
+                    path: '%goth_soundcloud_fieldtype.public_dir%/js/views/fields/templates/goth-soundcloud-editview.hbt'

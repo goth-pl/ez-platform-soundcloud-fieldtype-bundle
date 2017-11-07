@@ -1,0 +1,16 @@
+parameters:
+    goth.fieldtype.soundcloud.class: Goth\EzPlatformSoundCloudFieldTypeBundle\eZ\Publish\FieldType\SoundCloud\Type
+    goth.fieldtype.soundcloud.converter.class: Goth\EzPlatformSoundCloudFieldTypeBundle\eZ\Publish\FieldType\SoundCloud\LegacyConverter
+
+services:
+    goth.fieldtype.soundcloud:
+        parent: ezpublish.fieldType
+        class: '%goth.fieldtype.soundcloud.class%'
+        tags:
+            - { name: ezpublish.fieldType, alias: goth_soundcloud }
+            - { name: ezpublish.fieldType.nameable, alias: goth_soundcloud }
+
+    goth.fieldtype.soundcloud.converter:
+        class: '%goth.fieldtype.soundcloud.converter.class%'
+        tags:
+            - { name: ezpublish.storageEngine.legacy.converter, alias: goth_soundcloud }
