@@ -1,4 +1,4 @@
-# GothEzPlatformSoundCloud
+# GothEzPlatformSoundCloudFieldTypeBundle
 This bundle adds SoundCloud FieldType into eZ Platform.
 
 In progress..
